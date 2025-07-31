@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
+import AboutSection from './components/About';
 
 // Main App Component
 const App = () => {
@@ -51,11 +52,12 @@ const App = () => {
             animation: scroll-down 1.5s ease-out infinite;
           }
         `}</style>
-        
+
         <div className="antialiased bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-50 transition-colors duration-300">
             <Header theme={theme} toggleTheme={toggleTheme} />
             <main className="container mx-auto px-4 sm:px-6 lg:px-8 pt-16">
                 <HeroSection />
+                <AboutSection />
             </main>
         </div>
       </>
