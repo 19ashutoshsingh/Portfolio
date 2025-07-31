@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import AboutSection from './components/About';
+import EducationSection from './components/Education';
 
 // Main App Component
 const App = () => {
@@ -58,6 +59,7 @@ const App = () => {
             <main className="container mx-auto px-4 sm:px-6 lg:px-8 pt-16">
                 <HeroSection />
                 <AboutSection />
+                <EducationSection />
             </main>
         </div>
       </>
